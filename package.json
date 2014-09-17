@@ -8,6 +8,10 @@
   },
   "author": "Travis Horn",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/travishorn/identity.git"
+  },
   "devDependencies": {
     "chai": "^1.9.1",
     "gulp": "^3.8.8",
