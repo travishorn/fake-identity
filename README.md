@@ -20,7 +20,7 @@ Add the following to your application:
 
 ## Usage
 
-Once installed, just use `identity.generate()` in your scripts to get an identity object with random values.
+Once installed, just use `Identity.generate()` in your scripts to get an identity object with random values.
 
 ## Tests
 
