@@ -1,5 +1,7 @@
 # identity
 
+[![Build Status](https://travis-ci.org/travishorn/identity.svg?branch=master)](https://travis-ci.org/travishorn/identity)
+
 Generate random identity objects including name, address, etc.
 
 ## Installation
