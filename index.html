@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>identity.js by travishorn</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>identity.js</h1>
+          <h2>Generate random identity objects including name, address, etc. This may be useful if you are trying to fill your application with random personal data.</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/travishorn/identity/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/travishorn/identity/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/travishorn/identity" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <p><a href="https://travis-ci.org/travishorn/identity"><img src="https://travis-ci.org/travishorn/identity.svg?branch=master" alt="Build Status"></a></p>
+
+<h2>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
+
+<ul>
+<li>Generates a single random identity or multiple identities in an array.</li>
+<li>Includes first and last names, email address, phone number, street, city, state, date of birth, and department.</li>
+<li>Email address is based off of name.</li>
+<li>First name matches sex.</li>
+<li>All names, streets, and cities are commonly found in the US.</li>
+<li>States are weighted on population, so more populous states appear more often.</li>
+<li>Zip codes are loosely based on state. Zip codes are weird so it's not perfect, though.</li>
+<li>Date of birth will be between 18 and 60.</li>
+<li>Usable in the browser or Node.js.</li>
+</ul><h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<h3>
+<a name="browser" class="anchor" href="#browser"><span class="octicon octicon-link"></span></a>Browser</h3>
+
+<p>Add the following to your page:</p>
+
+<pre><code>&lt;script src="dist/identity.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<h3>
+<a name="node" class="anchor" href="#node"><span class="octicon octicon-link"></span></a>Node</h3>
+
+<p>Add the following to your application:</p>
+
+<pre><code>var Identity = require('./src/identity.js');
+</code></pre>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Once installed, just use <code>Identity.generate()</code> in your scripts to get an identity object with random values. The returned object looks like this:</p>
+
+<pre><code>{
+  firstName: "Amelia",
+  lastName: "Wright",
+  emailAddress: "awright@example.com",
+  phoneNumber: "(555) 555-0155",
+  street: "7327 Central Avenue",
+  city: "Oxford",
+  state: "TX",
+  zipCode: "75045",
+  dateOfBirth: Fri Jul 20 1962 00:00:00,
+  sex: "female",
+  company: "Contoso Pharmaceuticals",
+  department: "Legal"
+}
+</code></pre>
+
+<p>You can also pass a number to generate more than one identity. Multiple identity objects are returned in an array like so:</p>
+
+<pre><code>Identity.generate(3);
+
+[
+  {
+    firstName: ...
+    lastName: ...
+    ...
+  },
+  {
+    firstName: ...
+    lastName: ...
+    ...
+  },
+  {
+    firstName: ...
+    lastName: ...
+    ...
+  }
+]
+</code></pre>
+
+<h2>
+<a name="tests" class="anchor" href="#tests"><span class="octicon octicon-link"></span></a>Tests</h2>
+
+<p>Run <code>gulp test</code>.</p>
+
+<h2>
+<a name="to-do" class="anchor" href="#to-do"><span class="octicon octicon-link"></span></a>To do</h2>
+
+<ul>
+<li>Make into an NPM module</li>
+<li>Add configuration options</li>
+</ul><h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>The MIT License (MIT)
+Copyright © 2014 Travis Horn</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+        </section>
+
+        <footer>
+          identity.js is maintained by <a href="https://github.com/travishorn">travishorn</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
