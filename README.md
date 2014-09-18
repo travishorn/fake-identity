@@ -9,6 +9,7 @@ Generate random identity objects including name, address, etc. This may be usefu
 - Generates a single random identity or multiple identities in an array.
 - Includes first and last names, email address, phone number, street, city, state, date of birth, and department.
 - Email address is based off of name.
+- First name matches sex.
 - All names, streets, and cities are commonly found in the US.
 - States are weighted on population, so more populous states appear more often.
 - Zip codes are loosely based on state. Zip codes are weird so it's not perfect, though.
@@ -43,6 +44,7 @@ Once installed, just use `Identity.generate()` in your scripts to get an identit
       state: "TX",
       zipCode: "75045",
       dateOfBirth: Fri Jul 20 1962 00:00:00,
+      sex: "female",
       company: "Contoso Pharmaceuticals",
       department: "Legal"
     }
