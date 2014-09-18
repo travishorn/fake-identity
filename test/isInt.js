@@ -4,14 +4,14 @@ var isInt = require('../src/isInt');
 describe('isInt()', function () {
   'use strict';
   
-  it('should return true for integers', function () {
+  it('returns true for integers', function () {
     isInt(0).should.be.true;
     isInt(1).should.be.true;
     isInt(-1).should.be.true;
     isInt(Math.floor(Math.random() * 10000)).should.be.true;
   });
   
-  it('should return false for non-integers', function () {
+  it('returns false for non-integers', function () {
     isInt(1.5).should.be.false;
     isInt('a').should.be.false;
     isInt(null).should.be.false;

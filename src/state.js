@@ -1,15 +1,10 @@
+var states = require('./states');
+
 module.exports = function () {
   'use strict';
   
-  // All US states
-  var states = ['AK', 'AL', 'AR', 'AZ', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA',
-                'HI', 'IA', 'ID', 'IL', 'IN', 'KS', 'KY', 'LA', 'MA', 'MD',
-                'ME', 'MI', 'MN', 'MO', 'MS', 'MT', 'NC', 'ND', 'NE', 'NH',
-                'NJ', 'NM', 'NV', 'NY', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC',
-                'SD', 'TN', 'TX', 'UT', 'VA', 'VT', 'WA', 'WI', 'WV', 'WY'];
-  
   // Percentage of US population in those states
-  // Mapped 1:1 with the array above
+  // Mapped 1:1 with the states array
   var popPercent = [0.2,  1.5,  0.9,  2.1,  12.1, 1.6,  1.2,  0.3,  6.1,  3.2,
                     0.4,  1.0,  0.5,  4.1,  2.1,  0.9,  1.4,  1.5,  2.1,  1.9,
                     0.4,  3.2,  1.7,  1.9,  1.0,  0.3,  3.1,  0.2,  0.6,  0.4,

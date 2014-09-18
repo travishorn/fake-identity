@@ -6,12 +6,12 @@ describe('randomInArray()', function () {
   
   var array = [1, 'a', { object: true }, true, [1, 2, 3]];
   
-  it('should only accept arrays', function () {
+  it('only accepts arrays', function () {
     randomInArray.bind(randomInArray, array).should.not.throw(Error);
     randomInArray.bind(randomInArray, null).should.throw(Error);
   });
   
-  it('should include a random member of the array', function () {
+  it('returns a member of the array', function () {
     var i = 5;
     
     while (i) {

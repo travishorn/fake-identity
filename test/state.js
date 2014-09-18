@@ -10,12 +10,12 @@ var states = ['AK', 'AL', 'AR', 'AZ', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA',
 describe('state()', function () {
   'use strict';
   
-  it('should return a string, regardless of arguments', function () {
+  it('returns a string, regardless of arguments', function () {
     state().should.be.a('string');
     state('test').should.be.a('string');
   });
   
-  it('should be a US state', function () {
+  it('returns a US state', function () {
     states.should.include(state());
   });
 });

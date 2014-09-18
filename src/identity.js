@@ -1,13 +1,16 @@
 var isInt = require('./isInt');
+var sex = require('./sex');
 var firstName = require('./firstName.js');
 var lastName = require('./lastName.js');
+var emailAddress = require('./emailAddress');
 var phoneNumber = require('./phoneNumber');
-var department = require('./department');
 var street = require('./street');
 var city = require('./city');
 var state = require('./state');
-var emailAddress = require('./emailAddress');
+var zipCode = require('./zipCode');
 var dateOfBirth = require('./dateOfBirth');
+var company = require('./company');
+var department = require('./department');
 
 var identity = (function () {
   'use strict';
@@ -15,15 +18,18 @@ var identity = (function () {
   var Identity = function () {
     var identity = {};
     
-    identity.firstName = firstName();
+    identity.sex = sex();
+    identity.firstName = firstName(identity.sex);
     identity.lastName = lastName();
+    identity.emailAddress = emailAddress(identity.firstName, identity.lastName);
     identity.phoneNumber = phoneNumber();
-    identity.department = department();
     identity.street = street();
     identity.city = city();
     identity.state = state();
-    identity.emailAddress = emailAddress(identity.firstName, identity.lastName);
+    identity.zipCode = zipCode(identity.state);
     identity.dateOfBirth = dateOfBirth();
+    identity.company = company();
+    identity.department = department();
     
     return identity;
   };

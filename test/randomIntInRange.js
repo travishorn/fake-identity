@@ -5,11 +5,11 @@ var isInt = require('../src/isInt');
 describe('randomIntInRange()', function () {
   'use strict';
   
-  it('should return an integer', function () {
+  it('returns an integer', function () {
     isInt(randomIntInRange(0, 9999)).should.be.true;
   });
   
-  it('should be within specified range', function () {
+  it('returns an integer within specified range', function () {
     var i = 10,
       n;
     
@@ -23,12 +23,12 @@ describe('randomIntInRange()', function () {
     }
   });
   
-  it('should accept two integers', function () {
+  it('accepts two integers', function () {
     randomIntInRange.bind(randomIntInRange, 'a', 9999).should.throw(Error);
     randomIntInRange.bind(randomIntInRange, 0, 'b').should.throw(Error);
   });
   
-  it('should expect min to be less than max', function () {
+  it('expects min to be less than max', function () {
     randomIntInRange.bind(randomIntInRange, 0, 9999).should.not.throw(Error);
     randomIntInRange.bind(randomIntInRange, 9999, 0).should.throw(Error);
   });

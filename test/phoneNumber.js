@@ -4,12 +4,12 @@ var phoneNumber = require('../src/phoneNumber');
 describe('phoneNumber()', function () {
   'use strict';
   
-  it('should return a string, regardless of arguments', function () {
+  it('returns a string, regardless of arguments', function () {
     phoneNumber().should.be.a('string');
     phoneNumber('test').should.be.a('string');
   });
   
-  it('should be formatted like a phone number', function () {
+  it('is formatted like a phone number', function () {
     var generatedNumber = phoneNumber();
     
     generatedNumber.slice(0, 1).should.equal('(');
