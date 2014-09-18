@@ -1,5 +1,5 @@
 var should = require('chai').should();
-var identity = require('../src/identity');
+var identity = require('../src/fake-identity');
 
 describe('identity', function () {
   'use strict';

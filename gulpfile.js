@@ -21,7 +21,7 @@ gulp.task('test', function () {
 });
 
 gulp.task('build', function () {
-  gulp.src('src/identity.js')
+  gulp.src('src/fake-identity.js')
     .pipe(browserify({
       insertGlobals: true,
       debug: true

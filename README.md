@@ -1,4 +1,4 @@
-# identity.js
+# fake-identity.js
 
 [![Build Status](https://travis-ci.org/travishorn/identity.svg?branch=master)](https://travis-ci.org/travishorn/identity)
 
@@ -15,6 +15,7 @@ Generate random identity objects including name, address, etc. This may be usefu
 - Zip codes are loosely based on state. Zip codes are weird so it's not perfect, though.
 - Date of birth will be between 18 and 60.
 - Usable in the browser or Node.js.
+- No dependencies.
 
 ## Installation
 
@@ -22,13 +23,15 @@ Generate random identity objects including name, address, etc. This may be usefu
 
 Add the following to your page:
 
-    <script src="dist/identity.js"></script>
+    <script src="dist/fake-identity.js"></script>
+    
+This will make a new global variable named `Identity` available.
 
 ### Node
 
 Add the following to your application:
 
-    var Identity = require('./src/identity.js');
+    var Identity = require('./src/fake-identity.js');
 
 ## Usage
 
