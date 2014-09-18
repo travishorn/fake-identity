@@ -7,7 +7,7 @@ Generate random identity objects including name, address, etc. This may be usefu
 ## Features
 
 - Generates a single random identity or multiple identities in an array.
-- Includes first and last names, email address, phone number, street, city, state, date of birth, and department.
+- Includes first and last names, email address, phone number, street, city, state, zip code, date of birth, sex, company, and department.
 - Email address is based off of name.
 - First name matches sex.
 - All names, streets, and cities are commonly found in the US.
