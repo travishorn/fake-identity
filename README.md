@@ -1,6 +1,6 @@
 # fake-identity.js
 
-[![Build Status](https://travis-ci.org/travishorn/identity.svg?branch=master)](https://travis-ci.org/travishorn/identity)
+[![Build Status](https://travis-ci.org/travishorn/fake-identity.svg?branch=master)](https://travis-ci.org/travishorn/fake-identity)
 
 Generate random identity objects including name, address, etc. This may be useful if you are trying to fill your application with random personal data.
 
@@ -29,9 +29,13 @@ This will make a new global variable named `Identity` available.
 
 ### Node
 
+Run
+
+    npm install fake-identity
+
 Add the following to your application:
 
-    var Identity = require('./src/fake-identity.js');
+    var Identity = require('fake-identity');
 
 ## Usage
 
@@ -80,7 +84,6 @@ Run `gulp test`.
 
 ## To do
 
-- Make into an NPM module
 - Add configuration options
 
 ## License
