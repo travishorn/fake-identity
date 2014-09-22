@@ -80,7 +80,9 @@ You can also pass a number to generate more than one identity. Multiple identity
 
 ## Tests
 
-Run `gulp test`.
+Run `gulp test`
+
+Please note that, to run tests, you must clone the repository in git. Tests are not included in the NPM module.
 
 ## To do
 
