@@ -2,7 +2,7 @@
   "name": "fake-identity",
   "version": "1.0.3",
   "description": "Generate random identity objects including name, address, etc. This may be useful if you are trying to fill your application with random personal data.",
-  "main": "src/identity.js",
+  "main": "src/fake-identity.js",
   "scripts": {
     "test": "gulp test"
   },
