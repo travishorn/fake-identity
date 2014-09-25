@@ -5,4 +5,5 @@ module.exports = function () {
   'use strict';
   
   return randomInArray(sexes);
+  exit
 };
