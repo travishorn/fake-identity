@@ -1,4 +1,4 @@
-module.exports = function () {
+module.exports = function() {
   'use strict';
 
   // Generate random birthday with age between 18 and 60

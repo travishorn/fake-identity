@@ -3,9 +3,9 @@ var randomInArray = require('./randomInArray');
 var randomIntInRange = require('./randomIntInRange');
 var pad = require('./pad');
 
-module.exports = function (state) {
+module.exports = function(state) {
   'use strict';
-  
+
   if (state) {
     var zipStartsWith = {
       'AL': ['35', '36'],
@@ -60,16 +60,16 @@ module.exports = function (state) {
       'WI': ['53', '54'],
       'WY': ['82', '831']
     };
-    
+
     if (states.indexOf(state) === -1) {
       throw new Error(state + ' is not a valid state.');
-    } else {      
+    } else {
       var zipPart1 = randomInArray(zipStartsWith[state]);
-      
+
       var zipPart2 = randomIntInRange(0, 999);
-      
+
       zipPart2 = pad(zipPart2, 3);
-      
+
       return (zipPart1 + zipPart2).slice(0, 5);
     }
   } else {

@@ -1,6 +1,6 @@
 {
   "name": "fake-identity",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Generate random identity objects including name, address, etc. This may be useful if you are trying to fill your application with random personal data.",
   "main": "src/fake-identity.js",
   "scripts": {

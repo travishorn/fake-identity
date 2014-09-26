@@ -1,3 +1,7 @@
 {
-  "expr": true
+  "expr": true,
+  "predef": [
+    "describe",
+    "it"
+  ]
 }

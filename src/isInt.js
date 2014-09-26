@@ -1,5 +1,5 @@
-module.exports = function (n) {
+module.exports = function(n) {
   'use strict';
-  
+
   return parseInt(n, 10) === n;
 };

@@ -12,12 +12,12 @@ var dateOfBirth = require('./dateOfBirth');
 var company = require('./company');
 var department = require('./department');
 
-var identity = (function () {
+var identity = (function() {
   'use strict';
-  
-  var Identity = function () {
+
+  var Identity = function() {
     var identity = {};
-    
+
     identity.sex = sex();
     identity.firstName = firstName(identity.sex);
     identity.lastName = lastName();
@@ -30,29 +30,29 @@ var identity = (function () {
     identity.dateOfBirth = dateOfBirth();
     identity.company = company();
     identity.department = department();
-    
+
     return identity;
   };
-  
+
   function generate(num) {
     if ((num && (!isInt(num) || num < 1)) || num === 0) {
       throw new Error(num + ' is not a positive integer.');
     }
-    
+
     if (!num || num === 1) {
       return new Identity();
     } else {
-      var identities = [],
-        i;
-      
+      var identities = [];
+      var i;
+
       for (i = 0; i < num; i += 1) {
         identities.push(new Identity());
       }
-      
+
       return identities;
     }
   }
-  
+
   return {
     generate: generate
   };

@@ -1,6 +1,6 @@
-module.exports = function (array) {
+module.exports = function(array) {
   'use strict';
-  
+
   if (Array.isArray(array)) {
     return array[Math.floor(Math.random() * array.length)];
   } else {
